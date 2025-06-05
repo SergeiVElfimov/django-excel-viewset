@@ -51,11 +51,11 @@ class TestXLSXCreator:
     def test_make_excel(self):
         """Test the make_excel method."""
         self._xlsx_creator.make_excel()
-        dataframe = openpyxl.load_workbook(filename=self.file)
-        dataframe1 = dataframe.active
+        workbook = openpyxl.load_workbook(filename=self.file)
+        worksheet = workbook.active
         res_data = [["test", None], [None, None], ["Head 1", "Head 2"], [1, 2], [3, 4]]
-        for row in range(0, dataframe1.max_row):
+        for row in range(0, worksheet.max_row):
             i = 0
-            for col in dataframe1.iter_cols(1, dataframe1.max_column):
+            for col in worksheet.iter_cols(1, worksheet.max_column):
                 assert col[row].value == res_data[row][i]
                 i = i + 1
