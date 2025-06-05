@@ -63,6 +63,7 @@ types-pytz = "^2025.2.0.20250516"
 typing-extensions = "^4.12.2"
 ruff = "^0.5.0"
 urllib3 = "<=2.2.2"
+openpyxl = "^3.0.5"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"

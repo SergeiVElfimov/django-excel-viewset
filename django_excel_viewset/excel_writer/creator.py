@@ -23,13 +23,12 @@ class XLSXCreator:
     Example:
         wb = xlsxwriter.Workbook(f"example.xlsx")
         ws = wb.add_worksheet("single")
-        xlsx_create = XLSXCreator(workbook=wb, worksheet=ws)
-        xlsx_create.add_table(heading=header, data=list_of_lists, table_label="1")
-        xlsx_create.add_cell(text="test text",
+        xlsx_creator = XLSXCreator(workbook=wb, worksheet=ws)
+        xlsx_creator.add_table(heading=header, data=list_of_lists, table_label="1")
+        xlsx_creator.add_cell(text="test text",
                             cell_format={"bold": True, "text_wrap": True, "font_size": 15}, row_padding=2
                             )
-        xlsx_create.add_row(row=["test", 3], row_padding=1)
-
+        xlsx_creator.add_row(row=["test", 3], row_padding=1)
     """
 
     def __init__(
