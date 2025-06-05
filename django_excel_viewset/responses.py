@@ -1,7 +1,7 @@
 import typing
+from urllib.parse import quote
 
 from django.http import HttpResponse
-from django.utils.http import urlquote
 
 from .excel_writer import SimpleExcelFileCreator
 
@@ -46,7 +46,7 @@ class XLSXResponse(HttpResponse):
         )
         super().__init__(excel_creator.get_excel_for_response(), *args, **kwargs, content_type=self.__content_type)
 
-        self["Content-Disposition"] = f"attachment; filename={urlquote(self._add_file_extension(filename))}"
+        self["Content-Disposition"] = f"attachment; filename={quote(self._add_file_extension(filename))}"
 
     def _add_file_extension(self, filename: str) -> str:
         """Extension to the file name if it does not exist.
