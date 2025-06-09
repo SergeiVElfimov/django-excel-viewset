@@ -28,9 +28,9 @@ from .models import Contact
 
 class ContactExcelSerializer(ExcelSerializerMixin, ModelSerializer):
     # Settings excel table
-    excel_filename = "users"
-    excel_sheetname = "users"
-    excel_table_label = "Users"
+    excel_filename = "contacts"
+    excel_sheetname = "contacts"
+    excel_table_label = "Contacts"
     datetime_cell_format = {"num_format": "dd.mm.yyyy h:mm;@", "border": 1, "border_color": "#000000"}
     date_cell_format = {"num_format": "dd.mm.yyyy", "border": 1, "border_color": "#000000"}
     percent_cell_format = {"num_format": "0.00"%"", "border": 1, "border_color": "#000000"}
