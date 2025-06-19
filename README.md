@@ -82,13 +82,3 @@ DJANGO_EXCEL_VIEWSET_LOCAL_TIMEZONE - setting time zone (default value "Europe/M
 
 ## Installation
 ```pip install django-excel-viewset```
-
-## Contribution
-
-You can run tests with `pytest`.
-
-```
-pip install poetry
-poetry install
-pytest
-```
