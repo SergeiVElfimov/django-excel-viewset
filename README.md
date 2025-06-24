@@ -82,3 +82,7 @@ DJANGO_EXCEL_VIEWSET_LOCAL_TIMEZONE - setting time zone (default value "Europe/M
 
 ## Installation
 ```pip install django-excel-viewset```
+
+## Contributing
+
+Before contributing please read our [contributing guidelines](CONTRIBUTING.md).
