@@ -1,5 +1,8 @@
 # Django Excel ViewSet
 
+[![build-status-image]][build-status]
+[![pypi-version]][pypi]
+
 Small improvement in the functionality of [drf](https://github.com/encode/django-rest-framework) for exporting data into excel file.
 
 ## Examples
@@ -86,3 +89,9 @@ DJANGO_EXCEL_VIEWSET_LOCAL_TIMEZONE - setting time zone (default value "Europe/M
 ## Contributing
 
 Before contributing please read our [contributing guidelines](CONTRIBUTING.md).
+
+[build-status-image]: https://github.com/SergeiVElfimov/django-excel-viewset/actions/workflows/python-package.yml/badge.svg
+[build-status]: https://github.com/SergeiVElfimov/django-excel-viewset/actions/workflows/python-package.yml
+[pypi-version]: https://img.shields.io/pypi/v/django-excel-viewset.svg
+[pypi]: https://pypi.org/project/django-excel-viewset/
+
