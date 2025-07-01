@@ -2,6 +2,7 @@
 
 [![build-status-image]][build-status]
 [![pypi-version]][pypi]
+[![codeql-image]][codeql]
 
 Small improvement in the functionality of [drf](https://github.com/encode/django-rest-framework) for exporting data into excel file.
 
@@ -94,4 +95,5 @@ Before contributing please read our [contributing guidelines](CONTRIBUTING.md).
 [build-status]: https://github.com/SergeiVElfimov/django-excel-viewset/actions/workflows/python-package.yml
 [pypi-version]: https://img.shields.io/pypi/v/django-excel-viewset.svg
 [pypi]: https://pypi.org/project/django-excel-viewset/
-
+[codeql-image]: https://github.com/SergeiVElfimov/django-excel-viewset/actions/workflows/codeql.yml/badge.svg
+[codeql]: https://github.com/SergeiVElfimov/django-excel-viewset/actions/workflows/codeql.yml
